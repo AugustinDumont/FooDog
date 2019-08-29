@@ -13,12 +13,16 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; }
-  header .nav ul li {
-    width: 64px;
-    height: 64px; }
+  header .nav {
+    width: 50%;
+    display: flex;
+    font-size: 10px;
+    justify-content: space-around; }
+    header .nav li {
+      max-width: 15%; }
 
-.centre {
+nav {
   display: flex;
-  align-content: center; }
+  justify-content: center; }
 
 /* footer */

@@ -23,12 +23,12 @@ header{
 
 
         .nav{
- 
-            ul{
-               
+        width: 50%;
+                display: flex;
+                font-size: 10px;
+                justify-content: space-around;
                 li{
-                    width: 64px;
-                    height: 64px;
+                    max-width: 15%;
                     a{
  
                     }
@@ -37,13 +37,13 @@ header{
 
             }
 
-        }
+        
 
 }
 
-.centre{
+nav{
     display: flex;
-    align-content: center;
+    justify-content: center;
 
 }
 
