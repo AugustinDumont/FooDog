@@ -1,3 +1,92 @@
+/*the variables start here*/
+/*the last section starts from here*/
+section:last-of-type.container {
+  max-width: 100%;
+  background-color: #414549;
+  font-size: 15px;
+  color: #fff;
+  padding: 2rem 0rem; }
+  section:last-of-type.container .row {
+    margin: auto;
+    max-width: 40%; }
+    section:last-of-type.container .row div:first-child .row:first-child div {
+      opacity: 0.5;
+      font-size: 12px;
+      padding: 0rem 0rem 0rem 0.5rem;
+      border-bottom: 0px; }
+    section:last-of-type.container .row div:first-child .row {
+      max-width: 100%; }
+      section:last-of-type.container .row div:first-child .row div {
+        max-width: 100%;
+        margin: 0rem;
+        padding: 0rem;
+        font-weight: 700;
+        font-size: 9px;
+        border-bottom: 1px solid #1e5f7e;
+        height: 1.5rem; }
+    section:last-of-type.container .row div:nth-of-type(2) .row:first-child div {
+      opacity: 0.5;
+      font-size: 12px;
+      padding: 0rem 0rem 0.2rem 0.5rem; }
+    section:last-of-type.container .row div:nth-of-type(2) .row {
+      max-width: 100%;
+      margin-bottom: 0.2rem; }
+      section:last-of-type.container .row div:nth-of-type(2) .row div {
+        margin: 0rem;
+        padding: 0.1rem 0rem; }
+        section:last-of-type.container .row div:nth-of-type(2) .row div img {
+          min-width: 100%;
+          height: 2.5rem; }
+        section:last-of-type.container .row div:nth-of-type(2) .row div p {
+          font-size: 11px;
+          width: 100%;
+          text-align: center; }
+    section:last-of-type.container .row div:nth-of-type(3) img {
+      max-width: 100%; }
+    section:last-of-type.container .row div:nth-of-type(3) .row:first-child div {
+      opacity: 0.5;
+      font-size: 12px;
+      padding: 0rem 0rem 0rem 0.5rem; }
+    section:last-of-type.container .row div:nth-of-type(3) .row {
+      max-width: 100%; }
+      section:last-of-type.container .row div:nth-of-type(3) .row div {
+        max-width: 100%;
+        margin: 0rem;
+        padding: 0.1rem; }
 
+/*the last section ends here*/
+/* footer yousef starts from here guys*/
+footer.container {
+  max-width: 100%;
+  background-color: #333;
+  height: 5rem; }
+  footer.container .row {
+    max-width: 40%;
+    margin: auto;
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: flex-end; }
+    footer.container .row div {
+      background-color: #414549;
+      max-width: 2rem;
+      max-height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin: 1rem 0.2rem; }
+      footer.container .row div .fa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 20px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: #fff; }
+
+/* footer yousef ends  here guys*/
 
 /*# sourceMappingURL=style.css.map */
