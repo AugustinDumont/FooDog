@@ -3,7 +3,7 @@ header {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  margin-top: 40px;
+  margin-top: 20px;
   /*  */ }
   header #titre-1 {
     display: flex;
@@ -12,7 +12,11 @@ header {
   header #social-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    list-style: none; }
+    header #social-menu li figure img {
+      width: 16px;
+      height: 16px; }
   header .nav {
     width: 50%;
     display: flex;
