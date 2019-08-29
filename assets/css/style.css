@@ -22,7 +22,7 @@ section:last-of-type.container {
         padding: 0rem;
         font-weight: 700;
         font-size: 9px;
-        border-bottom: 1px solid #1e5f7e;
+        border-bottom: 1px solid #2b4049;
         height: 1.5rem; }
     section:last-of-type.container .row div:nth-of-type(2) .row:first-child div {
       opacity: 0.5;
