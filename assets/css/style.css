@@ -1,2 +1,24 @@
 /* header kevin */
-/* */
+header {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-top: 40px;
+  /*  */ }
+  header #titre-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  header #social-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  header .nav ul li {
+    width: 64px;
+    height: 64px; }
+
+.centre {
+  display: flex;
+  align-content: center; }
+
+/* footer */
