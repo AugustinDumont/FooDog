@@ -177,6 +177,7 @@ h4{
     flex-direction: row;
     justify-content: baseline;
     align-content: center;
+    border-radius: 0%;
     img, p{
         padding: auto;
         margin: auto;
@@ -207,6 +208,20 @@ h4{
     justify-content: center;
 }
 
+
+#listeDroite{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+
+
+    img{
+        width: 100%;
+        margin-right: -10px;
+
+    }
+}
 
 /* section featured posts fin*/
 
