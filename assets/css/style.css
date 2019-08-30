@@ -38,17 +38,18 @@ figure img {
   width: 100%; }
 
 /* fin du corps des articles */
-#section1 img {
-  width: 100%;
-  height: auto; }
-
-#section1 h3 {
-  font-size: 0.8rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px; }
+#section1 {
+  padding-top: 20px; }
+  #section1 img {
+    width: 100%;
+    height: auto; }
+  #section1 h3 {
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px; }
 
 .categories {
   font-family: 'Open Sans', sans-serif;
@@ -69,6 +70,12 @@ h4 {
   font-weight: bold;
   color: black;
   opacity: 0.8; }
+  h4 .textBold {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: 900;
+    font-size: 0.6rem; }
 
 /* footer */
 /* fin du footer */

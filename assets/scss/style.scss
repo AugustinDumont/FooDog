@@ -72,7 +72,7 @@ figure img{
 /* fin du corps des articles */
 
 #section1{
-
+    padding-top: 20px;
     
     img{
         width: 100%;
@@ -114,6 +114,14 @@ h4{
     font-weight: bold;
     color:  black;
     opacity: 0.8;
+
+    .textBold{
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+        text-align: center;
+        font-weight: 900;
+        font-size: 0.6rem;
+    }
 }
 /* footer */
 
