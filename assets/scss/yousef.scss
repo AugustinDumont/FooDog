@@ -1,0 +1,289 @@
+/*the variables start here*/
+
+$fullContainer: 100%;
+$fullWidth: 100%;
+$maxWidthRow: 50%;
+$maxWidthIcons: 2rem;
+$maxHeightIcons: 2rem;
+$autoMargin: auto;
+$displayFlex: flex;
+$whiteColorText: #fff;
+$bgLastSection: #414549;
+$bgcolorLine: #989899;
+
+/*the varibles end here */
+
+
+/*here starts global style*/
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: $fullWidth;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+
+/*here ends global style*/
+
+
+/*the latest posts section starts here*/
+
+section#latest-posts {
+    max-width: $fullContainer;
+    .row.father {
+        max-width: $maxWidthRow;
+        margin: 2rem $autoMargin;
+        .titleLine {
+            min-width: $fullWidth;
+            margin: 0rem;
+            padding: 0rem;
+            display: $displayFlex;
+            align-content: center;
+            div:first-child {
+                display: flex;
+                align-items: center;
+                p {
+                    font-size: 12px;
+                    font-weight: 900;
+                    align-self: center;
+                    margin: 0rem;
+                }
+            }
+            div:last-child {
+                background-color: $bgcolorLine;
+                height: 1px;
+                align-self: center
+            }
+        }
+        .row.articles {
+            display: flex;
+            justify-content: space-between;
+            min-width: $fullWidth;
+            margin: 0rem;
+            padding: 0rem;
+            article {
+                display: $displayFlex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 1rem 0rem;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 5px 15px 20px $bgLastSection;
+                }
+                div {
+                    text-align: center;
+                    margin: 0.3rem 0rem;
+                    h3 {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 12px;
+                        font-weight: 900;
+                        align-self: center;
+                        margin: 0rem;
+                        color: $bgcolorLine;
+                        b {
+                            color: orangered;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .under-line {
+            min-width: $fullWidth;
+            padding: 1rem;
+            margin: 0rem;
+            border-top: 0.5px solid $bgcolorLine;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-content: space-around;
+            .circle {
+                border: 0.5px solid $bgcolorLine;
+                border-radius: 50%;
+                display: $displayFlex;
+                justify-content: center;
+                align-items: center;
+                margin: 0.2rem;
+                max-width: 30px;
+                height: 30px;
+                opacity: 0.5;
+                font-size: 12px;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 5px 15px 20px $bgcolorLine;
+                    background: black;
+                    color: $whiteColorText;
+                    transition: all 2s;
+                }
+            }
+            .circle:first-of-type {
+                color: $whiteColorText;
+                background: black;
+            }
+            .circle:nth-of-type(3) {
+                border: 0px;
+            }
+        }
+    }
+}
+
+
+/*the latest posts section ends here*/
+
+
+/*the last section starts from here*/
+
+section#last-setion-yousef.container {
+    max-width: $fullContainer;
+    background-color: $bgLastSection;
+    font-size: 15px;
+    color: $whiteColorText;
+    padding: 2rem 0rem;
+    .row {
+        margin: $autoMargin;
+        max-width: $maxWidthRow;
+        div:first-child {
+            .row:first-child {
+                div {
+                    opacity: 0.5;
+                    font-size: 12px;
+                    padding: 0rem 0rem 0rem 0.5rem;
+                    border-bottom: 0px;
+                }
+            }
+            .row {
+                max-width: $fullWidth;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 5px 15px 20px $bgcolorLine;
+                    background: $whiteColorText;
+                    color: black;
+                    transform: scale(2);
+                    transition: all 2s;
+                }
+                div {
+                    max-width: $fullWidth;
+                    margin: 0rem;
+                    padding: 0rem;
+                    font-weight: 700;
+                    font-size: 12px;
+                    border-bottom: 1px solid rgb(43, 64, 73);
+                    height: 2rem
+                }
+            }
+        }
+        div:nth-of-type(2) {
+            .row:first-child {
+                div {
+                    opacity: 0.5;
+                    font-size: 12px;
+                    padding: 0rem 0rem 0.2rem 0.5rem;
+                }
+            }
+            .row {
+                max-width: $fullWidth;
+                margin-bottom: 0.2rem;
+                div {
+                    margin: 0rem;
+                    padding: 0.1rem 0rem;
+                    img {
+                        min-width: $fullWidth;
+                        height: 3.3rem;
+                    }
+                    p {
+                        font-size: 11px;
+                        width: $fullWidth;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        div:nth-of-type(3) {
+            img {
+                max-width: $fullWidth;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 5px 15px 20px $bgLastSection;
+                    transform: scale(-1);
+                    transition: all 10s;
+                }
+            }
+            .row:first-child {
+                div {
+                    opacity: 0.5;
+                    font-size: 12px;
+                    padding: 0rem 0rem 0rem 0.5rem;
+                }
+            }
+            .row {
+                max-width: $fullWidth;
+                div {
+                    margin: 0rem;
+                    padding: 0.1rem;
+                }
+            }
+        }
+    }
+}
+
+
+/*the last section ends here*/
+
+
+/* footer yousef starts from here guys*/
+
+footer.container {
+    max-width: $fullContainer;
+    background-color: #333;
+    height: 5rem;
+    .row {
+        max-width: $maxWidthRow;
+        margin: $autoMargin;
+        padding: 0rem 1rem;
+        display: $displayFlex;
+        justify-content: flex-end;
+        div {
+            background-color: #414549;
+            max-width: $maxWidthIcons;
+            max-height: $maxHeightIcons;
+            border-radius: 50%;
+            display: $displayFlex;
+            justify-content: center;
+            align-content: center;
+            margin: 1rem 0.2rem;
+            &:hover {
+                cursor: pointer;
+                box-shadow: 5px 15px 20px $bgcolorLine;
+                transition: all 2s;
+            }
+            .fa {
+                display: $displayFlex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                font-size: 20px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+                color: $whiteColorText;
+            }
+        }
+    }
+}
+
+
+/* footer yousef ends  here guys*/
