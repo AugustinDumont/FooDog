@@ -178,6 +178,7 @@ h4{
     justify-content: baseline;
     align-content: center;
     border-radius: 0%;
+    border: none;
     img, p{
         padding: auto;
         margin: auto;
@@ -208,6 +209,12 @@ h4{
     justify-content: space;
     max-width: 50%;
     font-size: 0.6rem;
+    margin-top: -22px;
+    display: inline-block;
+    margin-left: 20%;
+    background-color: orangered;
+    opacity: 0.8;
+    border: none;
 }
 
 
@@ -223,6 +230,16 @@ h4{
     }
 }
 
+#farmers{
+    width: 70%;
+    height: 70%;
+    
+    
+}
+
+#blocFarmers{
+    max-width: 100%;
+}
 /* section featured posts fin*/
 
 
