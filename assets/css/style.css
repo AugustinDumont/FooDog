@@ -136,9 +136,8 @@ h4 {
 
 #try {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: row;
+  justify-content: center; }
 
 /* section featured posts fin*/
 /* footer */
