@@ -183,21 +183,30 @@ h4{
     }
     p{
         font-weight: 900;
+        font-size: 0.6rem;
     }
 }
 
 .follow{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
 }
 
 .gauche{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-content: baseline;
 }
 
+#try{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* section featured posts fin*/
