@@ -8,7 +8,8 @@ $maxHeightIcons: 2rem;
 $autoMargin: auto;
 $displayFlex: flex;
 $whiteColorText: #fff;
-$bgLastSection: #414549;
+$bgFirstSectionOfFooter: #414549;
+$bgColorLastSectionOfFooter: #333;
 $bgcolorLine: #989899;
 
 /*the varibles end here */
@@ -79,7 +80,7 @@ section#latest-posts {
                 margin: 1rem 0rem;
                 &:hover {
                     cursor: pointer;
-                    box-shadow: 5px 15px 20px $bgLastSection;
+                    box-shadow: 5px 15px 20px #414549;
                 }
                 div {
                     text-align: center;
@@ -144,117 +145,122 @@ section#latest-posts {
 /*the latest posts section ends here*/
 
 
-/*the last section starts from here*/
+/* footer yousef starts from here guys*/
 
-section#last-setion-yousef.container {
+#footer-yousef.container.yousef {
     max-width: $fullContainer;
-    background-color: $bgLastSection;
-    font-size: 15px;
-    color: $whiteColorText;
-    padding: 2rem 0rem;
-    .row {
-        margin: $autoMargin;
-        max-width: $maxWidthRow;
-        div:first-child {
-            .row:first-child {
-                div {
-                    opacity: 0.5;
-                    font-size: 12px;
-                    padding: 0rem 0rem 0rem 0.5rem;
-                    border-bottom: 0px;
+    margin: 0rem;
+    padding: 0rem;
+    /*here is the section of the footer page that contains the dogs photos before the last one*/
+    section.row.dogs-photos {
+        max-width: $fullWidth;
+        padding: 0rem;
+        margin: 0rem;
+        background-color: $bgFirstSectionOfFooter;
+        display: $displayFlex;
+        justify-content: center;
+        div.center {
+            padding: 0rem;
+            margin: 2rem 0rem;
+            display: $displayFlex;
+            flex-wrap: nowrap;
+            color: $whiteColorText;
+            article:first-child {
+                .row:first-child {
+                    div {
+                        opacity: 0.5;
+                        font-size: 12px;
+                        padding: 0rem 0rem 0rem 0.5rem;
+                        border-bottom: 0px;
+                    }
                 }
-            }
-            .row {
-                max-width: $fullWidth;
-                &:hover {
-                    cursor: pointer;
-                    box-shadow: 5px 15px 20px $bgcolorLine;
-                    background: $whiteColorText;
-                    color: black;
-                    transform: scale(2);
-                    transition: all 2s;
-                }
-                div {
+                .row {
                     max-width: $fullWidth;
-                    margin: 0rem;
-                    padding: 0rem;
-                    font-weight: 700;
-                    font-size: 12px;
-                    border-bottom: 1px solid rgb(43, 64, 73);
-                    height: 2rem
-                }
-            }
-        }
-        div:nth-of-type(2) {
-            .row:first-child {
-                div {
-                    opacity: 0.5;
-                    font-size: 12px;
-                    padding: 0rem 0rem 0.2rem 0.5rem;
-                }
-            }
-            .row {
-                max-width: $fullWidth;
-                margin-bottom: 0.2rem;
-                div {
-                    margin: 0rem;
-                    padding: 0.1rem 0rem;
-                    img {
-                        min-width: $fullWidth;
-                        height: 3.3rem;
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: 5px 15px 20px $bgcolorLine;
+                        background: $whiteColorText;
+                        color: black;
+                        transform: scale(1);
+                        transition: all 1.5s;
                     }
-                    p {
-                        font-size: 11px;
-                        width: $fullWidth;
-                        text-align: center;
+                    div {
+                        max-width: $fullWidth;
+                        margin: 0rem;
+                        padding: 0rem;
+                        font-weight: 700;
+                        font-size: 12px;
+                        border-bottom: 1px solid rgb(43, 64, 73);
+                        height: 2rem
                     }
                 }
             }
-        }
-        div:nth-of-type(3) {
-            img {
-                max-width: $fullWidth;
-                &:hover {
-                    cursor: pointer;
-                    box-shadow: 5px 15px 20px $bgLastSection;
-                    transform: scale(-1);
-                    transition: all 10s;
+            article:nth-of-type(2) {
+                .row:first-child {
+                    div {
+                        opacity: 0.5;
+                        font-size: 12px;
+                        padding: 0rem 0rem 0.2rem 0.5rem;
+                    }
+                }
+                .row {
+                    max-width: $fullWidth;
+                    margin-bottom: 0.2rem;
+                    div {
+                        margin: 0rem;
+                        padding: 0.1rem 0rem;
+                        img {
+                            min-width: $fullWidth;
+                            height: 3.3rem;
+                        }
+                        p {
+                            font-size: 11px;
+                            width: $fullWidth;
+                            text-align: center;
+                        }
+                    }
                 }
             }
-            .row:first-child {
-                div {
-                    opacity: 0.5;
-                    font-size: 12px;
-                    padding: 0rem 0rem 0rem 0.5rem;
+            article:nth-of-type(3) {
+                img {
+                    max-width: $fullWidth;
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: 5px 15px 20px #414549;
+                        transform: scale(-1);
+                        transition: all 10s;
+                    }
                 }
-            }
-            .row {
-                max-width: $fullWidth;
-                div {
-                    margin: 0rem;
-                    padding: 0.1rem;
+                .row:first-child {
+                    div {
+                        opacity: 0.5;
+                        font-size: 12px;
+                        padding: 0rem 0rem 0.2rem 0.5rem;
+                    }
+                }
+                .row {
+                    max-width: $fullWidth;
+                    div {
+                        margin: 0rem;
+                        padding: 0.1rem;
+                    }
                 }
             }
         }
     }
-}
-
-
-/*the last section ends here*/
-
-
-/* footer yousef starts from here guys*/
-
-footer.container {
-    max-width: $fullContainer;
-    background-color: #333;
-    height: 5rem;
-    .row {
-        max-width: $maxWidthRow;
-        margin: $autoMargin;
-        padding: 0rem 1rem;
-        display: $displayFlex;
-        justify-content: flex-end;
+    /*here is the last section of the footer page that contains the social media icons*/
+    section.row.icons {
+        max-width: $fullWidth;
+        padding: 0rem;
+        margin: 0rem;
+        background-color: $bgColorLastSectionOfFooter;
+        height: 4rem;
+        article.center {
+            margin: $autoMargin;
+            padding: 0rem 1rem;
+            display: $displayFlex;
+            justify-content: flex-end;
+        }
         div {
             background-color: #414549;
             max-width: $maxWidthIcons;
