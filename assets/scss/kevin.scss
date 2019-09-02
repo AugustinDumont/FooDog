@@ -32,7 +32,6 @@ header {
         justify-content: space-around;
         li {
             max-width: 15%;
-            a {}
         }
     }
 }
@@ -245,6 +244,11 @@ p {
     font-family: 'Crimson Text', serif;
 }
 
+.lien:hover{
+    color: red;
+    font-size: 12px;
+
+}
 
 /* section featured posts fin*/
 
