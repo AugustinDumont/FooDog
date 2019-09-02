@@ -243,6 +243,24 @@ h4{
 .barreGrise{
     opacity: 0.5;
 }
+
+.share{
+
+    figure{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        img{
+            max-width: 32px;
+            max-height: 32px;
+        }
+        p{
+            margin-top: 5px;
+            margin-left: 5px;
+        
+        }
+    }
+}
 /* section featured posts fin*/
 
 
