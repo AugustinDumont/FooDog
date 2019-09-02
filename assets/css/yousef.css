@@ -19,11 +19,11 @@ a {
 /*here ends global style*/
 /*the latest posts section starts here*/
 section#latest-posts.container, section#latest-posts.container .row.father .titleLine, #footer-yousef.container.yousef, #footer-yousef.container.yousef section.row.dogs-photos, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div, #footer-yousef.container.yousef section.row.icons {
-  max-width: 100%;
+  min-width: 100%;
   margin: 0rem;
   padding: 0rem; }
   section#latest-posts.container .row.father, section#latest-posts.container .row.father .titleLine .row.father, #footer-yousef.container.yousef .row.father, #footer-yousef.container.yousef section.row.dogs-photos .row.father, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father, #footer-yousef.container.yousef section.row.icons .row.father {
-    max-width: 50%;
+    max-width: 64%;
     margin: 2rem auto; }
     @media only screen and (max-width: 768px) {
       section#latest-posts.container .row.father, section#latest-posts.container .row.father .titleLine .row.father, #footer-yousef.container.yousef .row.father, #footer-yousef.container.yousef section.row.dogs-photos .row.father, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father, #footer-yousef.container.yousef section.row.icons .row.father {
@@ -36,6 +36,7 @@ section#latest-posts.container, section#latest-posts.container .row.father .titl
         display: flex;
         align-items: center; }
         section#latest-posts.container .row.father .titleLine div:first-child p, #footer-yousef.container.yousef .row.father .titleLine div:first-child p, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .titleLine div:first-child p {
+          min-width: 15rem;
           font-size: 12px;
           font-weight: 900;
           align-self: center;
@@ -107,6 +108,7 @@ section#latest-posts.container, section#latest-posts.container .row.father .titl
 /*the latest posts section ends here*/
 /* footer yousef starts from here guys*/
 #footer-yousef.container.yousef {
+  width: 100%;
   /*here is the section of the footer page that contains the dogs photos before the last one*/
   /*here is the last section of the footer page that contains the social media icons*/ }
   #footer-yousef.container.yousef section.row.dogs-photos {
