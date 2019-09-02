@@ -1,5 +1,9 @@
 /*the variables start here*/
 
+$fontGlobalFamily: 'Open Sans',
+sans-serif;
+$fontSize: 12px;
+$maxWidthMediaQ: 768px;
 $fullContainer: 100%;
 $fullWidth: 100%;
 $maxWidthRow: 50%;
@@ -8,17 +12,55 @@ $maxHeightIcons: 2rem;
 $autoMargin: auto;
 $displayFlex: flex;
 $whiteColorText: #fff;
+$blackColor: black;
 $bgFirstSectionOfFooter: #414549;
 $bgColorLastSectionOfFooter: #333;
 $bgcolorLine: #989899;
+$transitionTime: 1.5s;
+$none: none;
+$zeroPM: 0rem;
+$center: center;
+$fiftyRadius: 50%;
 
 /*the varibles end here */
+
+
+/*start mixin*/
+
+@mixin fontFamityGlobal {
+    font-family: $fontGlobalFamily;
+}
+
+@mixin setLink {
+    color: $blackColor;
+    text-decoration: $none;
+}
+
+@mixin setContainer {
+    max-width: $fullContainer;
+    margin: $zeroPM;
+    padding: $zeroPM;
+}
+
+@mixin flexWrapCenter {
+    display: $displayFlex;
+    flex-wrap: wrap;
+    justify-content: $center;
+}
+
+@mixin flexCenter {
+    display: $displayFlex;
+    justify-content: $center;
+}
+
+
+/*end mixin*/
 
 
 /*here starts global style*/
 
 html {
-    font-family: 'Open Sans', sans-serif;
+    @include fontFamityGlobal;
 }
 
 img {
@@ -26,11 +68,9 @@ img {
 }
 
 a {
-    color: black;
-    text-decoration: none;
+    @include setLink;
     &:hover {
-        color: black;
-        text-decoration: none;
+        @include setLink;
     }
 }
 
@@ -40,62 +80,59 @@ a {
 
 /*the latest posts section starts here*/
 
-section#latest-posts {
-    max-width: $fullContainer;
+section#latest-posts.container {
+    @include setContainer;
     .row.father {
         max-width: $maxWidthRow;
         margin: 2rem $autoMargin;
-        @media only screen and (max-width: 769px) {
+        @media only screen and (max-width: $maxWidthMediaQ) {
             max-width: $fullWidth;
         }
         .titleLine {
+            @extend section#latest-posts.container;
             min-width: $fullWidth;
-            margin: 0rem;
-            padding: 0rem;
             display: $displayFlex;
-            align-content: center;
+            align-content: $center;
             div:first-child {
                 display: flex;
-                align-items: center;
+                align-items: $center;
                 p {
-                    font-size: 12px;
+                    font-size: $fontSize;
                     font-weight: 900;
-                    align-self: center;
-                    margin: 0rem;
+                    align-self: $center;
+                    margin: $zeroPM;
                 }
             }
             div:last-child {
                 background-color: $bgcolorLine;
                 height: 1px;
-                align-self: center
+                align-self: $center
             }
         }
         .row.articles {
-            display: flex;
+            display: $displayFlex;
             justify-content: space-between;
             min-width: $fullWidth;
-            margin: 0rem;
-            padding: 0rem;
+            margin: $zeroPM;
+            padding: $zeroPM;
             article {
-                display: $displayFlex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin: 1rem 0rem;
+                @include flexWrapCenter;
+                margin: 1rem $zeroPM;
                 &:hover {
                     cursor: pointer;
                     box-shadow: 5px 15px 20px #414549;
                 }
                 div {
-                    text-align: center;
-                    margin: 0.3rem 0rem;
+                    text-align: $center;
+                    margin: 0.3rem $zeroPM;
                     h3 {
                         font-size: 20px;
                     }
                     p {
-                        font-size: 12px;
+                        font-size: $fontSize;
                         font-weight: 900;
-                        align-self: center;
-                        margin: 0rem;
+                        align-self: $center;
+                        margin: $zeroPM;
                         color: $bgcolorLine;
                         b {
                             color: orangered;
@@ -108,34 +145,32 @@ section#latest-posts {
         .under-line {
             min-width: $fullWidth;
             padding: 1rem;
-            margin: 0rem;
+            margin: $zeroPM;
             border-top: 0.5px solid $bgcolorLine;
-            text-align: center;
-            display: flex;
-            justify-content: center;
+            text-align: $center;
+            @include flexCenter;
             align-content: space-around;
             .circle {
                 border: 0.5px solid $bgcolorLine;
-                border-radius: 50%;
-                display: $displayFlex;
-                justify-content: center;
-                align-items: center;
+                border-radius: $fiftyRadius;
+                @include flexCenter;
+                align-items: $center;
                 margin: 0.2rem;
                 max-width: 30px;
                 height: 30px;
                 opacity: 0.5;
-                font-size: 12px;
+                font-size: $fontSize;
                 &:hover {
                     cursor: pointer;
                     box-shadow: 5px 15px 20px $bgcolorLine;
-                    background: black;
+                    background: $blackColor;
                     color: $whiteColorText;
-                    transition: all 2s;
+                    transition: all $transitionTime;
                 }
             }
             .circle:first-of-type {
                 color: $whiteColorText;
-                background: black;
+                background: $blackColor;
             }
             .circle:nth-of-type(3) {
                 border: 0px;
@@ -151,37 +186,31 @@ section#latest-posts {
 /* footer yousef starts from here guys*/
 
 #footer-yousef.container.yousef {
-    max-width: $fullContainer;
-    margin: 0rem;
-    padding: 0rem;
+    @extend section#latest-posts.container;
     /*here is the section of the footer page that contains the dogs photos before the last one*/
     section.row.dogs-photos {
-        max-width: $fullWidth;
-        padding: 0rem;
-        margin: 0rem;
+        @extend section#latest-posts.container;
         background-color: $bgFirstSectionOfFooter;
-        display: $displayFlex;
-        justify-content: center;
+        @include flexCenter;
         div.center {
-            padding: 0rem;
-            margin: 2rem 0rem;
+            padding: $zeroPM;
+            margin: 2rem $zeroPM;
             display: $displayFlex;
             flex-wrap: nowrap;
             color: $whiteColorText;
-            @media only screen and (max-width: 768px) {
-                flex-wrap: wrap;
-                justify-content: center;
+            @media only screen and (max-width: $maxWidthMediaQ) {
+                @include flexCenter;
             }
             article:first-child {
-                margin: 0rem $autoMargin;
+                margin: $zeroPM $autoMargin;
                 .row:first-child {
-                    @media only screen and (max-width: 768px) {
-                        text-align: center;
+                    @media only screen and (max-width: $maxWidthMediaQ) {
+                        text-align: $center;
                     }
                     div {
                         opacity: 0.5;
-                        font-size: 12px;
-                        padding: 0rem 0rem 0rem 0.5rem;
+                        font-size: $fontSize;
+                        padding: $zeroPM $zeroPM $zeroPM 0.5rem;
                         border-bottom: 0px;
                     }
                 }
@@ -192,14 +221,12 @@ section#latest-posts {
                         cursor: pointer;
                         box-shadow: 5px 15px 20px $bgcolorLine;
                         background: $whiteColorText;
-                        color: black;
+                        color: $blackColor;
                         transform: scale(1);
-                        transition: all 1.5s;
+                        transition: all $transitionTime;
                     }
                     div {
-                        max-width: $fullWidth;
-                        margin: 0rem;
-                        padding: 0rem;
+                        @extend section#latest-posts.container;
                         font-weight: 700;
                         font-size: 12px;
                         border-bottom: 1px solid rgb(43, 64, 73);
@@ -208,28 +235,26 @@ section#latest-posts {
                 }
             }
             article:nth-of-type(2) {
-                @media only screen and (max-width: 768px) {
-                    display: $displayFlex;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                @media only screen and (max-width: $maxWidthMediaQ) {
+                    @include flexWrapCenter;
                 }
                 .row:first-child {
-                    @media only screen and (max-width: 768px) {
+                    @media only screen and (max-width: $maxWidthMediaQ) {
                         min-width: $fullWidth;
-                        text-align: center;
+                        text-align: $center;
                     }
                     div {
                         opacity: 0.5;
-                        font-size: 12px;
-                        padding: 0rem 0rem 0.2rem 0.5rem;
+                        font-size: $fontSize;
+                        padding: $zeroPM $zeroPM 0.2rem 0.5rem;
                     }
                 }
                 .row {
                     max-width: $fullWidth;
                     margin-bottom: 0.2rem;
                     div {
-                        margin: 0rem;
-                        padding: 0.1rem 0rem;
+                        margin: $zeroPM;
+                        padding: 0.1rem $zeroPM;
                         img {
                             min-width: $fullWidth;
                             height: 3.3rem;
@@ -237,20 +262,18 @@ section#latest-posts {
                         p {
                             font-size: 11px;
                             width: $fullWidth;
-                            text-align: center;
+                            text-align: $center;
                         }
                     }
                 }
             }
             article:nth-of-type(3) {
-                @media only screen and (max-width: 768px) {
-                    display: $displayFlex;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                @media only screen and (max-width: $maxWidthMediaQ) {
+                    @include flexWrapCenter;
                 }
                 img {
                     max-width: $fullWidth;
-                    @media only screen and (max-width: 768px) {
+                    @media only screen and (max-width: $maxWidthMediaQ) {
                         width: $fullWidth;
                     }
                     &:hover {
@@ -263,14 +286,14 @@ section#latest-posts {
                 .row:first-child {
                     div {
                         opacity: 0.5;
-                        font-size: 12px;
-                        padding: 0rem 0rem 0.2rem 0.5rem;
+                        font-size: $fontSize;
+                        padding: $zeroPM $zeroPM 0.2rem 0.5rem;
                     }
                 }
                 .row {
                     max-width: $fullWidth;
                     div {
-                        margin: 0rem;
+                        margin: $zeroPM;
                         padding: 0.1rem;
                     }
                 }
@@ -279,44 +302,40 @@ section#latest-posts {
     }
     /*here is the last section of the footer page that contains the social media icons*/
     section.row.icons {
-        max-width: $fullWidth;
-        padding: 0rem;
-        margin: 0rem;
+        @extend section#latest-posts.container;
         background-color: $bgColorLastSectionOfFooter;
         height: 4rem;
         article.center {
             margin: $autoMargin;
-            padding: 0rem 1rem;
+            padding: $zeroPM 1rem;
             display: $displayFlex;
             justify-content: flex-end;
-            @media only screen and (max-width: 768px) {
-                justify-content: center;
+            @media only screen and (max-width: $maxWidthMediaQ) {
+                justify-content: $center;
             }
         }
         div {
             background-color: #414549;
             max-width: $maxWidthIcons;
             max-height: $maxHeightIcons;
-            border-radius: 50%;
-            display: $displayFlex;
-            justify-content: center;
-            align-content: center;
+            border-radius: $fiftyRadius;
+            @include flexCenter;
+            align-content: $center;
             margin: 1rem 0.2rem;
             &:hover {
                 cursor: pointer;
                 box-shadow: 5px 15px 20px $bgcolorLine;
-                transition: all 2s;
+                transition: all $transitionTime;
             }
             .fa {
-                display: $displayFlex;
-                justify-content: center;
-                align-items: center;
+                @include flexCenter;
+                align-items: $center;
                 padding: 10px;
                 font-size: 20px;
                 width: 30px;
-                text-align: center;
-                text-decoration: none;
-                border-radius: 50%;
+                text-align: $center;
+                text-decoration: $none;
+                border-radius: $fiftyRadius;
                 color: $whiteColorText;
             }
         }

@@ -1,8 +1,10 @@
 /*the variables start here*/
 /*the varibles end here */
+/*start mixin*/
+/*end mixin*/
 /*here starts global style*/
 html {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 img {
   max-width: 100%; }
@@ -16,61 +18,61 @@ a {
 
 /*here ends global style*/
 /*the latest posts section starts here*/
-section#latest-posts {
-  max-width: 100%; }
-  section#latest-posts .row.father {
+section#latest-posts.container, section#latest-posts.container .row.father .titleLine, #footer-yousef.container.yousef, #footer-yousef.container.yousef section.row.dogs-photos, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div, #footer-yousef.container.yousef section.row.icons {
+  max-width: 100%;
+  margin: 0rem;
+  padding: 0rem; }
+  section#latest-posts.container .row.father, section#latest-posts.container .row.father .titleLine .row.father, #footer-yousef.container.yousef .row.father, #footer-yousef.container.yousef section.row.dogs-photos .row.father, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father, #footer-yousef.container.yousef section.row.icons .row.father {
     max-width: 50%;
     margin: 2rem auto; }
-    @media only screen and (max-width: 769px) {
-      section#latest-posts .row.father {
+    @media only screen and (max-width: 768px) {
+      section#latest-posts.container .row.father, section#latest-posts.container .row.father .titleLine .row.father, #footer-yousef.container.yousef .row.father, #footer-yousef.container.yousef section.row.dogs-photos .row.father, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father, #footer-yousef.container.yousef section.row.icons .row.father {
         max-width: 100%; } }
-    section#latest-posts .row.father .titleLine {
+    section#latest-posts.container .row.father .titleLine, #footer-yousef.container.yousef .row.father .titleLine, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .titleLine {
       min-width: 100%;
-      margin: 0rem;
-      padding: 0rem;
       display: flex;
       align-content: center; }
-      section#latest-posts .row.father .titleLine div:first-child {
+      section#latest-posts.container .row.father .titleLine div:first-child, #footer-yousef.container.yousef .row.father .titleLine div:first-child, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .titleLine div:first-child {
         display: flex;
         align-items: center; }
-        section#latest-posts .row.father .titleLine div:first-child p {
+        section#latest-posts.container .row.father .titleLine div:first-child p, #footer-yousef.container.yousef .row.father .titleLine div:first-child p, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .titleLine div:first-child p {
           font-size: 12px;
           font-weight: 900;
           align-self: center;
           margin: 0rem; }
-      section#latest-posts .row.father .titleLine div:last-child {
+      section#latest-posts.container .row.father .titleLine div:last-child, #footer-yousef.container.yousef .row.father .titleLine div:last-child, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .titleLine div:last-child {
         background-color: #989899;
         height: 1px;
         align-self: center; }
-    section#latest-posts .row.father .row.articles {
+    section#latest-posts.container .row.father .row.articles, #footer-yousef.container.yousef .row.father .row.articles, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .row.articles {
       display: flex;
       justify-content: space-between;
       min-width: 100%;
       margin: 0rem;
       padding: 0rem; }
-      section#latest-posts .row.father .row.articles article {
+      section#latest-posts.container .row.father .row.articles article, #footer-yousef.container.yousef .row.father .row.articles article, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .row.articles article {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: 1rem 0rem; }
-        section#latest-posts .row.father .row.articles article:hover {
+        section#latest-posts.container .row.father .row.articles article:hover, #footer-yousef.container.yousef .row.father .row.articles article:hover, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .row.articles article:hover {
           cursor: pointer;
           box-shadow: 5px 15px 20px #414549; }
-        section#latest-posts .row.father .row.articles article div {
+        section#latest-posts.container .row.father .row.articles article div, #footer-yousef.container.yousef .row.father .row.articles article div, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .row.articles article div {
           text-align: center;
           margin: 0.3rem 0rem; }
-          section#latest-posts .row.father .row.articles article div h3 {
+          section#latest-posts.container .row.father .row.articles article div h3, #footer-yousef.container.yousef .row.father .row.articles article div h3, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .row.articles article div h3 {
             font-size: 20px; }
-          section#latest-posts .row.father .row.articles article div p {
+          section#latest-posts.container .row.father .row.articles article div p, #footer-yousef.container.yousef .row.father .row.articles article div p, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .row.articles article div p {
             font-size: 12px;
             font-weight: 900;
             align-self: center;
             margin: 0rem;
             color: #989899; }
-            section#latest-posts .row.father .row.articles article div p b {
+            section#latest-posts.container .row.father .row.articles article div p b, #footer-yousef.container.yousef .row.father .row.articles article div p b, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .row.articles article div p b {
               color: orangered;
               font-size: 10px; }
-    section#latest-posts .row.father .under-line {
+    section#latest-posts.container .row.father .under-line, #footer-yousef.container.yousef .row.father .under-line, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .under-line {
       min-width: 100%;
       padding: 1rem;
       margin: 0rem;
@@ -79,7 +81,7 @@ section#latest-posts {
       display: flex;
       justify-content: center;
       align-content: space-around; }
-      section#latest-posts .row.father .under-line .circle {
+      section#latest-posts.container .row.father .under-line .circle, #footer-yousef.container.yousef .row.father .under-line .circle, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .under-line .circle {
         border: 0.5px solid #989899;
         border-radius: 50%;
         display: flex;
@@ -90,30 +92,24 @@ section#latest-posts {
         height: 30px;
         opacity: 0.5;
         font-size: 12px; }
-        section#latest-posts .row.father .under-line .circle:hover {
+        section#latest-posts.container .row.father .under-line .circle:hover, #footer-yousef.container.yousef .row.father .under-line .circle:hover, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .under-line .circle:hover {
           cursor: pointer;
           box-shadow: 5px 15px 20px #989899;
           background: black;
           color: #fff;
-          transition: all 2s; }
-      section#latest-posts .row.father .under-line .circle:first-of-type {
+          transition: all 1.5s; }
+      section#latest-posts.container .row.father .under-line .circle:first-of-type, #footer-yousef.container.yousef .row.father .under-line .circle:first-of-type, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .under-line .circle:first-of-type {
         color: #fff;
         background: black; }
-      section#latest-posts .row.father .under-line .circle:nth-of-type(3) {
+      section#latest-posts.container .row.father .under-line .circle:nth-of-type(3), #footer-yousef.container.yousef .row.father .under-line .circle:nth-of-type(3), #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .under-line .circle:nth-of-type(3) {
         border: 0px; }
 
 /*the latest posts section ends here*/
 /* footer yousef starts from here guys*/
 #footer-yousef.container.yousef {
-  max-width: 100%;
-  margin: 0rem;
-  padding: 0rem;
   /*here is the section of the footer page that contains the dogs photos before the last one*/
   /*here is the last section of the footer page that contains the social media icons*/ }
   #footer-yousef.container.yousef section.row.dogs-photos {
-    max-width: 100%;
-    padding: 0rem;
-    margin: 0rem;
     background-color: #414549;
     display: flex;
     justify-content: center; }
@@ -125,7 +121,7 @@ section#latest-posts {
       color: #fff; }
       @media only screen and (max-width: 768px) {
         #footer-yousef.container.yousef section.row.dogs-photos div.center {
-          flex-wrap: wrap;
+          display: flex;
           justify-content: center; } }
       #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child {
         margin: 0rem auto; }
@@ -148,9 +144,6 @@ section#latest-posts {
             transform: scale(1);
             transition: all 1.5s; }
           #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div {
-            max-width: 100%;
-            margin: 0rem;
-            padding: 0rem;
             font-weight: 700;
             font-size: 12px;
             border-bottom: 1px solid #2b4049;
@@ -206,9 +199,6 @@ section#latest-posts {
           margin: 0rem;
           padding: 0.1rem; }
   #footer-yousef.container.yousef section.row.icons {
-    max-width: 100%;
-    padding: 0rem;
-    margin: 0rem;
     background-color: #333;
     height: 4rem; }
     #footer-yousef.container.yousef section.row.icons article.center {
@@ -231,7 +221,7 @@ section#latest-posts {
       #footer-yousef.container.yousef section.row.icons div:hover {
         cursor: pointer;
         box-shadow: 5px 15px 20px #989899;
-        transition: all 2s; }
+        transition: all 1.5s; }
       #footer-yousef.container.yousef section.row.icons div .fa {
         display: flex;
         justify-content: center;
