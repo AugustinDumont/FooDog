@@ -45,6 +45,9 @@ section#latest-posts {
     .row.father {
         max-width: $maxWidthRow;
         margin: 2rem $autoMargin;
+        @media only screen and (max-width: 769px) {
+            max-width: $fullWidth;
+        }
         .titleLine {
             min-width: $fullWidth;
             margin: 0rem;
@@ -165,8 +168,16 @@ section#latest-posts {
             display: $displayFlex;
             flex-wrap: nowrap;
             color: $whiteColorText;
+            @media only screen and (max-width: 768px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
             article:first-child {
+                margin: 0rem $autoMargin;
                 .row:first-child {
+                    @media only screen and (max-width: 768px) {
+                        text-align: center;
+                    }
                     div {
                         opacity: 0.5;
                         font-size: 12px;
@@ -176,6 +187,7 @@ section#latest-posts {
                 }
                 .row {
                     max-width: $fullWidth;
+                    margin-left: 0.5rem;
                     &:hover {
                         cursor: pointer;
                         box-shadow: 5px 15px 20px $bgcolorLine;
@@ -196,7 +208,16 @@ section#latest-posts {
                 }
             }
             article:nth-of-type(2) {
+                @media only screen and (max-width: 768px) {
+                    display: $displayFlex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
                 .row:first-child {
+                    @media only screen and (max-width: 768px) {
+                        min-width: $fullWidth;
+                        text-align: center;
+                    }
                     div {
                         opacity: 0.5;
                         font-size: 12px;
@@ -222,8 +243,16 @@ section#latest-posts {
                 }
             }
             article:nth-of-type(3) {
+                @media only screen and (max-width: 768px) {
+                    display: $displayFlex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
                 img {
                     max-width: $fullWidth;
+                    @media only screen and (max-width: 768px) {
+                        width: $fullWidth;
+                    }
                     &:hover {
                         cursor: pointer;
                         box-shadow: 5px 15px 20px #414549;
@@ -260,6 +289,9 @@ section#latest-posts {
             padding: 0rem 1rem;
             display: $displayFlex;
             justify-content: flex-end;
+            @media only screen and (max-width: 768px) {
+                justify-content: center;
+            }
         }
         div {
             background-color: #414549;
