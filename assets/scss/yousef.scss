@@ -82,6 +82,7 @@ a {
 
 section#latest-posts.container {
     @include setContainer;
+    position: relative;
     .row.father {
         max-width: $maxWidthRow;
         margin: 2rem $autoMargin;
@@ -142,6 +143,14 @@ section#latest-posts.container {
                     }
                 }
             }
+        }
+        button {
+            background-color: $bgColorLastSectionOfFooter;
+            color: $whiteColorText;
+            position: fixed;
+            font-size: 2rem;
+            top: 18rem;
+            right: 0rem;
         }
         .under-line {
             min-width: $fullWidth;

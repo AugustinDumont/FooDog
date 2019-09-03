@@ -21,7 +21,8 @@ a {
 section#latest-posts.container, section#latest-posts.container .row.father .titleLine, #footer-yousef.container.yousef, #footer-yousef.container.yousef section.row.dogs-photos, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div, #footer-yousef.container.yousef section.row.icons {
   min-width: 100%;
   margin: 0rem;
-  padding: 0rem; }
+  padding: 0rem;
+  position: relative; }
   section#latest-posts.container .row.father, section#latest-posts.container .row.father .titleLine .row.father, #footer-yousef.container.yousef .row.father, #footer-yousef.container.yousef section.row.dogs-photos .row.father, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father, #footer-yousef.container.yousef section.row.icons .row.father {
     max-width: 64%;
     margin: 2rem auto; }
@@ -73,6 +74,13 @@ section#latest-posts.container, section#latest-posts.container .row.father .titl
             section#latest-posts.container .row.father .row.articles article div p b, #footer-yousef.container.yousef .row.father .row.articles article div p b, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .row.articles article div p b {
               color: orangered;
               font-size: 10px; }
+    section#latest-posts.container .row.father button, section#latest-posts.container .row.father .titleLine .row.father button, #footer-yousef.container.yousef .row.father button, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father button {
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      font-size: 2rem;
+      top: 18rem;
+      right: 0rem; }
     section#latest-posts.container .row.father .under-line, #footer-yousef.container.yousef .row.father .under-line, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .under-line {
       min-width: 100%;
       padding: 1rem;
