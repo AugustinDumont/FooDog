@@ -29,21 +29,21 @@ section#latest-posts.container, section#latest-posts.container .row.father .titl
       section#latest-posts.container .row.father, section#latest-posts.container .row.father .titleLine .row.father, #footer-yousef.container.yousef .row.father, #footer-yousef.container.yousef section.row.dogs-photos .row.father, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father, #footer-yousef.container.yousef section.row.icons .row.father {
         max-width: 100%; } }
     section#latest-posts.container .row.father .titleLine, #footer-yousef.container.yousef .row.father .titleLine, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .titleLine {
-      min-width: 100%;
+      min-width: 70%;
       display: flex;
-      align-content: center; }
+      justify-content: space-between; }
       section#latest-posts.container .row.father .titleLine div:first-child, #footer-yousef.container.yousef .row.father .titleLine div:first-child, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .titleLine div:first-child {
         display: flex;
-        align-items: center; }
+        align-items: flex-end; }
         section#latest-posts.container .row.father .titleLine div:first-child p, #footer-yousef.container.yousef .row.father .titleLine div:first-child p, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .titleLine div:first-child p {
-          min-width: 15rem;
+          width: 15em;
           font-size: 12px;
           font-weight: 900;
           align-self: center;
           margin: 0rem; }
       section#latest-posts.container .row.father .titleLine div:last-child, #footer-yousef.container.yousef .row.father .titleLine div:last-child, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .titleLine div:last-child {
         background-color: #989899;
-        height: 1px;
+        height: 3px;
         align-self: center; }
     section#latest-posts.container .row.father .row.articles, #footer-yousef.container.yousef .row.father .row.articles, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .row.articles {
       display: flex;

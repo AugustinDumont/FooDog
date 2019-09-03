@@ -90,14 +90,14 @@ section#latest-posts.container {
         }
         .titleLine {
             @extend section#latest-posts.container;
-            min-width: $fullWidth;
+            min-width: $fullWidth - 30%;
             display: $displayFlex;
-            align-content: $center;
+            justify-content: space-between;
             div:first-child {
                 display: flex;
-                align-items: $center;
+                align-items: flex-end;
                 p {
-                    min-width: 15rem;
+                    width: 15em;
                     font-size: $fontSize;
                     font-weight: 900;
                     align-self: $center;
@@ -106,7 +106,7 @@ section#latest-posts.container {
             }
             div:last-child {
                 background-color: $bgcolorLine;
-                height: 1px;
+                height: 3px;
                 align-self: $center
             }
         }
