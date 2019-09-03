@@ -80,7 +80,13 @@ section#latest-posts.container, section#latest-posts.container .row.father .titl
       position: fixed;
       font-size: 2rem;
       top: 18rem;
-      right: 0rem; }
+      right: 0rem;
+      animation: shadow-pulse 1s infinite; }
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5); }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0); } }
     section#latest-posts.container .row.father .under-line, #footer-yousef.container.yousef .row.father .under-line, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div .row.father .under-line {
       min-width: 100%;
       padding: 1rem;
