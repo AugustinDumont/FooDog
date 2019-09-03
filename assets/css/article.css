@@ -73,7 +73,8 @@ header {
   #article .intro-article {
     margin-left: 10%; }
     #article .intro-article .space-top {
-      padding-top: 10px; }
+      padding-top: 10px;
+      width: 100%; }
       #article .intro-article .space-top #title-intro {
         text-align: center; }
         #article .intro-article .space-top #title-intro p {
@@ -82,7 +83,7 @@ header {
           text-transform: uppercase; }
         #article .intro-article .space-top #title-intro h1 {
           margin-top: 10px;
-          font-size: 23px;
+          font-size: 25px;
           font-family: 'Open Sans', sans-serif;
           font-weight: bold; }
   #article #aside-intro {
@@ -93,8 +94,10 @@ header {
   #article .align-center-modif {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; }
+    margin-bottom: 10px;
+    width: 80%; }
   #article .align-followus {
+    width: 80%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -108,6 +111,9 @@ header {
     height: 90%;
     width: 80%;
     padding: 4%; }
+  #article .btn-farmersdog {
+    width: 30%;
+    margin: auto; }
   #article .logo {
     width: 20px;
     height: auto;
@@ -132,8 +138,6 @@ header {
   #article .main-dog {
     height: 500px; }
   #article .aside-dog {
-    width: 100%;
-    margin-bottom: -50px;
     height: auto; }
   #article ul {
     padding: 0;
@@ -304,6 +308,118 @@ header {
       font-family: "Open Sans", sans-serif; }
 
 /*********************FOOTER*******************/
+/* footer yousef starts from here guys*/
+#footer-yousef.container.yousef {
+  max-width: 100%;
+  margin: 0rem;
+  padding: 0rem;
+  /*here is the section of the footer page that contains the dogs photos before the last one*/
+  /*here is the last section of the footer page that contains the social media icons*/ }
+  #footer-yousef.container.yousef section.row.dogs-photos {
+    max-width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    background-color: #414549;
+    display: flex;
+    justify-content: center; }
+    #footer-yousef.container.yousef section.row.dogs-photos div.center {
+      padding: 0rem;
+      margin: 2rem 0rem;
+      display: flex;
+      flex-wrap: nowrap;
+      color: #fff; }
+      #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row:first-child div {
+        opacity: 0.5;
+        font-size: 12px;
+        padding: 0rem 0rem 0rem 0.5rem;
+        border-bottom: 0px; }
+      #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row {
+        max-width: 100%; }
+        #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row:hover {
+          cursor: pointer;
+          box-shadow: 5px 15px 20px #989899;
+          background: #fff;
+          color: black;
+          transform: scale(1);
+          transition: all 1.5s; }
+        #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div {
+          max-width: 100%;
+          margin: 0rem;
+          padding: 0rem;
+          font-weight: 700;
+          font-size: 12px;
+          border-bottom: 1px solid #2b4049;
+          height: 2rem; }
+      #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(2) .row:first-child div {
+        opacity: 0.5;
+        font-size: 12px;
+        padding: 0rem 0rem 0.2rem 0.5rem; }
+      #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(2) .row {
+        max-width: 100%;
+        margin-bottom: 0.2rem; }
+        #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(2) .row div {
+          margin: 0rem;
+          padding: 0.1rem 0rem; }
+          #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(2) .row div img {
+            min-width: 100%;
+            height: 3.3rem; }
+          #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(2) .row div p {
+            font-size: 11px;
+            width: 100%;
+            text-align: center; }
+      #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(3) img {
+        max-width: 100%; }
+        #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(3) img:hover {
+          cursor: pointer;
+          box-shadow: 5px 15px 20px #414549;
+          transform: scale(-1);
+          transition: all 10s; }
+      #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(3) .row:first-child div {
+        opacity: 0.5;
+        font-size: 12px;
+        padding: 0rem 0rem 0.2rem 0.5rem; }
+      #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(3) .row {
+        max-width: 100%; }
+        #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(3) .row div {
+          margin: 0rem;
+          padding: 0.1rem; }
+  #footer-yousef.container.yousef section.row.icons {
+    max-width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    background-color: #333;
+    height: 4rem; }
+    #footer-yousef.container.yousef section.row.icons article.center {
+      margin: auto;
+      padding: 0rem 1rem;
+      display: flex;
+      justify-content: flex-end; }
+    #footer-yousef.container.yousef section.row.icons div {
+      background-color: #414549;
+      max-width: 2rem;
+      max-height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin: 1rem 0.2rem; }
+      #footer-yousef.container.yousef section.row.icons div:hover {
+        cursor: pointer;
+        box-shadow: 5px 15px 20px #989899;
+        transition: all 2s; }
+      #footer-yousef.container.yousef section.row.icons div .fa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 20px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: #fff; }
+
+/* footer yousef ends  here guys*/
 /************GENERAL***************/
 a:hover {
   text-decoration: none; }
