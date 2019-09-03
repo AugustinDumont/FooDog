@@ -21,7 +21,15 @@ header {
             display: flex;
             justify-content: space-evenly;
             
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.2);
+    
+            }
+
             figure {
+    
+
                 img {
                     width: 16px;
                     height: 16px;
@@ -59,13 +67,22 @@ figure img {
     width: 100%;
 }
 
-#corpsArticles {}
+
 
 
 /* fin du corps des articles */
 
 #section1 {
     padding-top: 20px;
+        .zoom-out{
+        
+          &:hover{
+            cursor: pointer;
+            box-shadow: 5px 15px 20px #999;
+
+          }
+    
+    }
     img {
         width: 100%;
         height: auto;
@@ -97,7 +114,7 @@ h4 {
     margin-top: 10px;
     margin-bottom: 25px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+    font-weight: 900;
     color: black;
     opacity: 0.8;
     .textBold {
@@ -132,9 +149,6 @@ h4 {
     display: inline-block;
 }
 
-.espaceImg {
-    margin-top: 35px;
-}
 
 h4 {
     font-size: 0.8rem;
@@ -289,3 +303,21 @@ p {
         }
     }
 }
+
+
+#barreGriseTop{
+
+    .row{
+        hr{
+            margin-top: 20px; 
+            margin-left: 2%; 
+            font-weight: 900;
+        }
+    }
+}
+
+.hoverImg:hover{
+        cursor: pointer;
+       
+        transform: scale(1);
+    }
