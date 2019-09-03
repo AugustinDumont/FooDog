@@ -38,14 +38,14 @@
                     <span class="toggle_btn"></span>
                 </button>
                 <img src="assets/imgs/logo.jpeg" alt="logo Foodog" />
-                <form class="form-inline">
+                <form class="form-inline display-none">
                     <div class="text-form">
                         <p>Digest In Your Inbox &nbsp;</p>
                     </div>
                     <input type="email" name="email" placeholder=" &nbsp; YOUR EMAIL">
                     <input type="submit" name="submit" value=" SIGN UP">
                 </form>
-                <a href="https://www.thefarmersdog.com/"><img src="assets/imgs/logo-thefarmersdog.png"
+                <a href="index.html"><img src="assets/imgs/logo-thefarmersdog.png"
                         alt="logo The Farmer's dog" /></a>
             </nav>
         </div>
@@ -62,47 +62,40 @@
                     <p>Nutriton</p>
                     <h1>THE 11 DOG FOOD LABEL TRICKS EVERY OWNERS NEED TO KNOW</h1>
                 </div>
-                <div class="col-md-4 align-followus">Follow us</div>
+                <div class="col-md-4 align-followus display-none">Follow us</div>
             </div> <!-- Fin Ligne avec le titre et le p en rouge -->
             <div class="row">
                 <div class="col-md-8">
                     <img class="main-dog" src="assets/imgs/baby-article.jpg" />
-
+                    @
 
 
                     <!-- NAVBAR logo cliquable + boutons réseaux & comment || Classe="interlign" => border top/bot-->
                     <hr class="col-md-12 annu-padding">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                            <span class="navbar-toggler-icon"></span>
-                        </button> <a class="navbar-brand" href="#">Brand</a>
-                        <ul class="navbar-nav ml-md-auto">
-                            <li class="nav-item active">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#bs-example-navbar-collapse-1">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button> <a class="navbar-brand" href="#">comment</a>
-                            </li>
-                            <li class="nav-item">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#bs-example-navbar-collapse-1">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button> <a class="navbar-brand" href="#">share</a>
-                            </li>
-                            <button class="btn" type="button">
-                                <!-- Logos réseaux navbar-->
-                                <img class="logo" src="assets/imgs/facebook.png">
-                            </button>
-                            <button class="btn" type="button">
-                                <img class="logo" src="assets/imgs/twitter.png">
-                            </button>
-                            <button class="btn" type="button">
-                                <img class="logo" src="assets/imgs/instagram.png">
-                            </button>
-                        </ul>
-                    </nav>
+                   
+                   <div class="col-md-12 nav-bar-article display-none">
+                       <div class="nav-bar-article-left">
+                        <a href="https://www.thefarmersdog.com/"><img src="assets/imgs/logo-thefarmersdog.png"
+                            alt="logo The Farmer's dog" /></a>
+                            <p class="textBold">by THE FARMER'S DOG</p> 
+                            <button type="button" class="btn btn-dark btn-sm">
+                                    <p>comment</p>
+                                </button>
+                                <button class="btn btn-sm">
+                                    <p>share</p>
+                                </button>
+                                <button type="button" class="hover-zoom hover-zoom btn btn-sm">
+                                    <img class="logo" src="assets/imgs/facebook.png" alt="">
+                                </button>
+                                <button type="button" class="hover-zoom btn btn-sm ">
+                                    <img class="logo" src="assets/imgs/instagram.png" alt="">
+                                </button>
+                                <button type="button" class="hover-zoom btn btn-sm">
+                                    <img class="logo" src="assets/imgs/search.png" alt="">
+                                </button>
+                        </div>
+                                                     
+                   </div>
 
 
                     <article class="texte">
@@ -218,26 +211,34 @@
 
 
                 <!-- -------------------------ASIDE------------------------------------------------------------------------------------->
-                <div class="col-md-4">
+                <div class="col-md-4 display-none">
                     <!--Début ASIDE-->
                     <!--EN TRAIN DE MODIF LES ESPACEMENTS-->
 
                     <div class=" btn-sm align-center-modif" role="group" type="btn-group">
-                        <button class="btn delete-padding-right" type="button">
+                        <button class="btn delete-padding-right hover-zoom" type="button">
                             <img class="logo" src="assets/imgs/twitter.png">
                         </button>
-                        <button class="btn delete-padding-right" type="button">
+                        <button class="btn delete-padding-right hover-zoom" type="button">
                             <img class="logo" src="assets/imgs/facebook.png">
                         </button>
-                        <button class="btn delete-padding-right" type="button">
+                        <button class="btn delete-padding-right hover-zoom" type="button">
                             <img class="logo" src="assets/imgs/instagram.png">
                         </button>
-                        <button class="btn delete-padding-right" type="button">
+                        <button class="btn delete-padding-right hover-zoom" type="button">
                             <img class="logo" src="assets/imgs/search.png">
                         </button>
                     </div>
-                    <img class="aside-dog" src="assets/imgs/baby.jpg" alt="">
-                    <button class="btn-farmersdog">try it now</button>
+                    <figure>
+                    <img class="aside-dog" src="assets/imgs/baby.jpg" alt="photo chien">
+                    <button class="btn-farmersdog">try now</button>
+                    </figure>
+                    <div class="col-md-12 under-btn">
+                        <a href="https://www.thefarmersdog.com/"><img src="assets/imgs/logo-thefarmersdog.png"alt="logo The Farmer's dog" /></a>
+                        <p class="textBold">Real pet food made fresh delivered</p>
+                        <p>*cute dog not included</p>
+                    </div>
+
                 </div>
             </div><!-- Fin Col-MD-4 -->
         </section>
@@ -292,15 +293,15 @@
         <p class="textBold col-md-3">You might also like</p>
         <div class="col-md-9 grey-line"></div>
 
-        <div class="col-md-4 annu-padding">
+        <div class="col-md-4 annu-padding hover-zoom">
             <a href="https://www.naturedechien.fr/le-blog/" target="_blank"><img src="assets/imgs/dog2.jpg"></a>
             <p class="textBold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="col-md-4 annu-padding">
+        <div class="col-md-4 annu-padding hover-zoom">
             <a href="https://www.naturedechien.fr/le-blog/" target="_blank"><img src="assets/imgs/dog2.jpg"></a>
             <p class="textBold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="col-md-4 annu-padding">
+        <div class="col-md-4 annu-padding hover-zoom">
             <a href="https://www.naturedechien.fr/le-blog/" target="_blank"><img src="assets/imgs/dog2.jpg"></a>
             <p class="textBold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
@@ -341,7 +342,7 @@
             <div class="col-lg-6 col-xl-6 center">
                 <article class="col-lg-4 col-xl-4">
                     <div class="row">
-                        <div class="col-lg-12 col-xl-12">Lorem lorem</div>
+                        <div class="col-lg-12 col-xl-12" style="padding-left:0px">hereisaword</div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-xl-12">hereisaword</div>
@@ -361,36 +362,36 @@
                 </article>
                 <article class="col-lg-4 col-xl-4">
                     <div class="row">
-                        <div class="col-lg-12 col-xl-12">Lorem lorem</div>
+                        <div class="col-lg-12 col-xl-12"></div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/0.jpg" alt="here is an image of dog"/></div>
-                        <div class="col-lg-8 col-xl-8"><p> text for test the ajustement</p></div>
+                        <div class="col-lg-8 col-xl-8"><p class="ptoright"> text for ajustement</p></div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/4.jpg" alt="here is an image of dog"/></div>
-                        <div class="col-lg-8 col-xl-8"><p> text for test the ajustement</p></div>
+                        <div class="col-lg-8 col-xl-8"><p class="ptoright"> text for ajustement</p></div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/0.jpg" alt="here is an image of dog"/></div>
-                        <div class="col-lg-8 col-xl-8"><p> text for test the ajustement</p></div>
+                        <div class="col-lg-8 col-xl-8"><p class="ptoright"> text for ajustement</p></div>
                     </div>
                 </article>
                 <article class="col-lg-4 col-xl-4">
                     <div class="row">
-                        <div class="col-lg-12 col-xl-12">Lorem lorem</div>
+                        <div class="col-lg-12 col-xl-12"></div>
                     </div>
-                    <div class="row">
+                    <div class="row display-none">
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/9.jpg" alt="here is an image of dog"/></div>
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/77.jpg" alt="here is an image of dog"/></div>
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/7.jpg" alt="here is an image of dog"/></div>
                     </div>
-                    <div class="row">
+                    <div class="row display-none">
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/77.jpg" alt="here is an image of dog"/></div>
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/7.jpg" alt="here is an image of dog"/></div>
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/9.jpg" alt="here is an image of dog"/></div>
                     </div>
-                    <div class="row">
+                    <div class="row display-none">
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/9.jpg" alt="here is an image of dog"/></div>
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/77.jpg" alt="here is an image of dog"/></div>
                         <div class="col-lg-4 col-xl-4"><img src="assets/imgs/7.jpg" alt="here is an image of dog"/></div>
