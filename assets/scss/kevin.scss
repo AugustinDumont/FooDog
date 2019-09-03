@@ -12,12 +12,24 @@ header {
     }
     /*  */
     #social-menu {
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         list-style: none;
+        width: 100%;
         li {
+            display: flex;
+            justify-content: space-evenly;
+            
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.2);
+    
+            }
+
             figure {
+    
+
                 img {
                     width: 16px;
                     height: 16px;
@@ -32,7 +44,6 @@ header {
         justify-content: space-around;
         li {
             max-width: 15%;
-            a {}
         }
     }
 }
@@ -56,13 +67,22 @@ figure img {
     width: 100%;
 }
 
-#corpsArticles {}
+
 
 
 /* fin du corps des articles */
 
 #section1 {
     padding-top: 20px;
+        .zoom-out{
+        
+          &:hover{
+            cursor: pointer;
+            box-shadow: 5px 15px 20px #999;
+
+          }
+    
+    }
     img {
         width: 100%;
         height: auto;
@@ -94,7 +114,7 @@ h4 {
     margin-top: 10px;
     margin-bottom: 25px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+    font-weight: 900;
     color: black;
     opacity: 0.8;
     .textBold {
@@ -129,9 +149,6 @@ h4 {
     display: inline-block;
 }
 
-.espaceImg {
-    margin-top: 35px;
-}
 
 h4 {
     font-size: 0.8rem;
@@ -245,11 +262,67 @@ p {
     font-family: 'Crimson Text', serif;
 }
 
+.lien{
+    transition: all 0.5s;
+    &:hover{
+    color: #25b7d3;
+    background-color: #ededed;
+    cursor: pointer;
+    transform: scale(1.2);
+    text-align: center;
+    max-width: 100%;
+    }
+}
 
-/* section featured posts fin*/
+/* titre en gris page nutrition*/
 
 
-/* footer */
+#titreGris{
+    
+    background: #ededed;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    
+    
+    h2{
+        text-align: center;
+        margin-top: 25px;
+        color: #000000;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 900;
+        margin-bottom: 25px;        
+    }
+}
+
+#nutrition{
+    margin-left: 0px; 
+    min-width: 100%;
+    .row{
+        max-width: 77%;
+        @media screen and (max-width: 1280px) {
+            max-width: 90%;
+        }
+    }
+}
 
 
-/* fin du footer */
+#barreGriseTop{
+
+    .row{
+        hr{
+            margin-top: 20px; 
+            margin-left: 2%; 
+            font-weight: 900;
+        }
+    }
+}
+
+.hoverImg:hover{
+        cursor: pointer;
+       
+        transform: scale(1);
+    }
