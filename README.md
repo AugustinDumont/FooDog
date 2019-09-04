@@ -1,11 +1,11 @@
 # FooDog
 
-#Organisation de l'équipe
+# Organisation de l'équipe
 
 Groupe de 4 personnes. 
 2 x 2 personnes. 
 
-#Organisation du travail
+# Organisation du travail
 2 pages html + 1 bonus à réaliser. 
 Une équipe de deux par page. 
 
@@ -25,7 +25,7 @@ Points forts de l'équipe :
 - Bonne communication
 - Bonne utilisation des commentaires
 - réunion quotidienne entre chefs
-##gouvernance horizontale
+## gouvernance horizontale
 
 
 Points d'amélioration pour futurs projets : 
@@ -38,10 +38,14 @@ Points d'amélioration pour futurs projets :
 	- SASS : utiliser un ID pour chaque section et commencer indentation de chaque section SASS par cet ID. 
 
 
-#Impressions personelles
+# Impressions personelles
 
-##Augustin :
+## Augustin :
 
 "Beaucoup de choses apprises pour ce premier travail collectif. Amélioration de ma compréhension des problèmes grâce à l'utilisation de l'outil inspecteur. Plaisir à découvrir SASS et ses possibilités de structure. Au niveau humain, très bon duo avec mon partenaire. ##Nourriture partagée, rigolade, complicité##. Au niveau du groupe, la complémentarité des savoirs s'est montrée efficace. La divergence des personnalités, en aucun cas une gageure. Merci à tous !"
+
+## Yousef :
+
+"Best team ever, thank u all for your patience. I have learned things that i did not know, have tryed to do my best to make things better thanks to my team and their propostions, easy to work with them , we have not lose time to planing our project's parts because we had no issues. So thanks again"
 
 
