@@ -8,6 +8,7 @@ Groupe de 4 personnes.
 # Organisation du travail
 2 pages html + 1 bonus à réaliser. 
 Une équipe de deux par page. 
+Sur chaques pages dans l'équipe de deux, un qui commençait par le bas de la page et l'autre commençait par le haut, pour arriver chacun à la moitié de la page et ainsi ne pas faire de doublon ou de conflit.
 
 Difficultés : 
 
