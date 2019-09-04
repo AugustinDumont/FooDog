@@ -54,6 +54,19 @@ $fiftyRadius: 50%;
     justify-content: $center;
 }
 
+@mixin setPhoneMenu {
+    @media screen and (max-width: 768px) {
+        width: $fullWidth;
+        display: $displayFlex;
+        justify-content: space-evenly;
+        li:first-child,
+        li:last-child {
+            margin: $zeroPM;
+            padding: $zeroPM
+        }
+    }
+}
+
 
 /*end mixin*/
 
@@ -77,6 +90,22 @@ a {
 
 
 /*here ends global style*/
+
+
+/*media query menu version mobile */
+
+header#header {
+    div:last-child {
+        nav {
+            ul {
+                @include setPhoneMenu;
+            }
+        }
+    }
+}
+
+
+/*ends menu*/
 
 
 /*the latest posts section starts here*/

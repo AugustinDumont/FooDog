@@ -18,6 +18,18 @@ a {
     text-decoration: none; }
 
 /*here ends global style*/
+/*media query menu version mobile */
+@media screen and (max-width: 768px) {
+  header#header div:last-child nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
+    header#header div:last-child nav ul li:first-child,
+    header#header div:last-child nav ul li:last-child {
+      margin: 0rem;
+      padding: 0rem; } }
+
+/*ends menu*/
 /*the latest posts section starts here*/
 section#latest-posts.container, section#latest-posts.container .row.father .titleLine, #footer-yousef.container.yousef, #footer-yousef.container.yousef section.row.dogs-photos, #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row div, #footer-yousef.container.yousef section.row.icons {
   min-width: 100%;
