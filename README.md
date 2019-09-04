@@ -46,6 +46,6 @@ Points d'amélioration pour futurs projets :
 
 ## Yousef :
 
-"Best team ever, thank u all for your patience. I have learned things that i did not know, have tryed to do my best to make things better thanks to my team and their propostions, easy to work with them , we have not lose time to planing our project's parts because we had no problem. So thanks again"
+"Best team ever, thank u all for your patience. I have learned things that i did not know, have tryed to do my best to make things better thanks to my team and their propostions, easy to work with them , we have not lose time to planing our project's parts because we had no issues. So thanks again"
 
 
