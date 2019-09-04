@@ -9,6 +9,9 @@ header {
   animation-duration: 2s;
   opacity: 0.9; }
 
+.fixed-top a:hover {
+  text-decoration: none; }
+
 @keyframes dropdown {
   0% {
     top: -100px; }
@@ -51,22 +54,28 @@ header {
   justify-content: flex-start; }
   .navbar img {
     max-width: 180px; }
+    @media screen and (max-width: 768px) {
+      .navbar img {
+        justify-self: center; } }
   .navbar img:last-child {
     width: 40px;
     height: auto; }
 
-.navbar .form-inline {
+.navbar {
   margin: auto; }
-  .navbar .form-inline .text-form p {
+  @media screen and (max-width: 768px) {
+    .navbar .form-inline {
+      display: none; } }
+  .navbar .text-form p {
     font-family: "Open Sans", sans-serif;
     margin: 0.6rem 0.3rem;
     font-size: 0.8rem;
     opacity: 0.7; }
-  .navbar .form-inline input[type="email"] {
+  .navbar input[type="email"] {
     border: 1px solid black;
     border-radius: 0;
     font-size: 0.7rem; }
-  .navbar .form-inline input[type="submit"] {
+  .navbar input[type="submit"] {
     width: 80px;
     font-size: 0.7rem;
     background-color: black;
@@ -75,7 +84,7 @@ header {
     border-style: none;
     border: 1px solid black;
     transition: 0.4s ease-in; }
-    .navbar .form-inline input[type="submit"]:hover {
+    .navbar input[type="submit"]:hover {
       background-color: white;
       color: black;
       font-weight: 500; }
@@ -85,8 +94,10 @@ header {
   margin-top: 70px;
   display: flex;
   justify-content: flex-end;
-  margin-right: 0rem;
-  margin-right: auto; }
+  margin-right: 0rem; }
+  @media screen and (max-width: 768px) {
+    #article {
+      margin-right: auto; } }
 
 .intro-article {
   margin-left: 10%; }
@@ -106,6 +117,10 @@ header {
         font-family: 'Open Sans', sans-serif;
         font-weight: bold; }
 
+@media screen and (max-width: 768px) {
+  .nav-bar-article {
+    display: none; } }
+
 .nav-bar-article .nav-bar-article-left {
   display: flex;
   justify-content: flex-start; }
@@ -124,6 +139,12 @@ header {
     width: 20px;
     height: auto;
     padding: 0; }
+
+#delete-aside {
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    #delete-aside {
+      display: none; } }
 
 #aside-intro {
   text-align: center;
@@ -146,6 +167,9 @@ header {
   opacity: 0.7;
   font-size: 0.9rem;
   font-family: "Open Sans", sans-serif; }
+  @media screen and (max-width: 768px) {
+    .align-followus {
+      display: none; } }
 
 aside {
   text-align: center; }
@@ -177,32 +201,34 @@ figure {
   border: 2px solid #fc8d69;
   text-transform: uppercase; }
 
-.under-btn {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-  .under-btn img {
-    width: 50px;
-    height: auto;
-    float: left; }
-  .under-btn p {
-    width: 120px;
-    font-size: 0.6rem;
-    opacity: 0.4;
-    margin-left: 70px;
-    font-family: "Open Sans", sans-serif; }
-  .under-btn .textBold {
-    font-family: "Open Sans", sans-serif;
-    color: black;
-    font-weight: 900;
-    font-size: 0.8rem;
-    text-shadow: 0 0 0.5px black;
-    opacity: 0.4;
-    text-align: center;
-    text-transform: uppercase;
-    margin-left: 0px;
-    line-height: 1rem; }
+#delete-aside {
+  width: 100%; }
+  #delete-aside .under-btn {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    #delete-aside .under-btn img {
+      width: 50px;
+      height: auto;
+      float: left; }
+    #delete-aside .under-btn p {
+      width: 120px;
+      font-size: 0.6rem;
+      opacity: 0.4;
+      margin-left: 70px;
+      font-family: "Open Sans", sans-serif; }
+    #delete-aside .under-btn .textBold {
+      font-family: "Open Sans", sans-serif;
+      color: black;
+      font-weight: 900;
+      font-size: 0.8rem;
+      text-shadow: 0 0 0.5px black;
+      opacity: 0.4;
+      text-align: center;
+      text-transform: uppercase;
+      margin-left: 0px;
+      line-height: 1rem; }
 
 .logo {
   width: 20px;
@@ -232,7 +258,8 @@ img {
   width: 100%; }
 
 .main-dog {
-  height: 500px; }
+  height: auto;
+  width: 100%; }
 
 .aside-dog {
   height: auto; }
@@ -247,7 +274,8 @@ ul {
 
 .btn-share button {
   width: 17%;
-  min-width: 67px; }
+  min-width: 67px;
+  height: 30px; }
   .btn-share button p {
     font-size: 0.8rem; }
 
@@ -255,6 +283,9 @@ ul {
 #subscribe {
   width: 50%;
   margin: 50px auto 0 auto; }
+  @media screen and (max-width: 768px) {
+    #subscribe {
+      width: 80%; } }
   #subscribe p {
     font-size: 0.7rem;
     font-family: "Open Sans", sans-serif;
@@ -290,11 +321,20 @@ ul {
       font-weight: bold;
       border-style: none;
       border: 2px solid #fc8d69; }
+      #subscribe .form-inline input[type="submit"]:hover {
+        background-color: white;
+        color: #fc8d69;
+        border: 1px solid rgba(25, 25, 25, 0.4);
+        text-shadow: 0 0 0.5px #fc8d69;
+        box-shadow: 0 0 0 0.5px grey; }
 
 /*********************Previous article*******************/
 #previousarticle {
   width: 50%;
   margin: auto; }
+  @media screen and (max-width: 768px) {
+    #previousarticle {
+      width: 80%; } }
   #previousarticle .annu-padding {
     padding-right: 0;
     padding-left: 0; }
@@ -315,11 +355,16 @@ ul {
     text-transform: uppercase;
     text-shadow: 0 0 0.5px black;
     opacity: 0.8; }
+  #previousarticle a:hover {
+    text-decoration: none; }
 
 /*********************The Farmer's dog*******************/
 #thefarmersdog {
   width: 50%;
   margin: 30px auto 0 auto; }
+  @media screen and (max-width: 768px) {
+    #thefarmersdog {
+      width: 80%; } }
   #thefarmersdog img {
     width: 17%;
     min-width: 80px;
@@ -330,6 +375,9 @@ ul {
     font-family: "Open Sans", sans-serif;
     opacity: 0.5;
     margin-left: 100px; }
+    @media screen and (max-width: 768px) {
+      #thefarmersdog p {
+        margin-left: 0px; } }
   #thefarmersdog .textBold {
     font-family: "Open Sans", sans-serif;
     color: black;
@@ -343,6 +391,9 @@ ul {
 #youmightalsolike {
   width: 50%;
   margin: 30px auto 0 auto; }
+  @media screen and (max-width: 768px) {
+    #youmightalsolike {
+      width: 80%; } }
   #youmightalsolike .textBold {
     font-family: "Open Sans", sans-serif;
     color: black;
@@ -356,23 +407,31 @@ ul {
     width: 100%;
     background-color: rgba(25, 25, 25, 0.1); }
   #youmightalsolike img {
-    margin-top: 20px;
     width: 100%;
-    padding-right: 0px; }
-
-.annu-padding {
-  padding-right: 0; }
-  .annu-padding p {
+    padding-right: 0px;
+    margin-top: 20px; }
+  #youmightalsolike .annu-padding {
+    padding-right: 0;
+    width: 100%; }
+  #youmightalsolike p {
     margin-top: 15px;
     opacity: 0.7;
     text-align: justify;
     opacity: 0.5; }
+  @media screen and (max-width: 768px) {
+    #youmightalsolike .hover-zoom {
+      transform: scale(1);
+      width: 70%;
+      height: auto;
+      margin: auto; } }
 
 /*********************Leave a response*******************/
 #leavearesponse {
-  /* margin-bottom 70px à ajuster*/
   width: 50%;
   margin: 30px auto 70px auto; }
+  @media screen and (max-width: 768px) {
+    #leavearesponse {
+      width: 80%; } }
   #leavearesponse .textBoldBlack {
     font-family: "Open Sans", sans-serif;
     color: black;
@@ -384,6 +443,7 @@ ul {
     font-size: 0.8rem; }
     #leavearesponse form textarea {
       width: 100%;
+      min-width: 300px;
       height: 150px;
       padding: 8px;
       opacity: 0.9;
@@ -427,12 +487,23 @@ ul {
     background-color: #414549;
     display: flex;
     justify-content: center; }
+    @media screen and (max-width: 768px) {
+      #footer-yousef.container.yousef section.row.dogs-photos {
+        display: none; } }
     #footer-yousef.container.yousef section.row.dogs-photos div.center {
       padding: 0rem;
       margin: 2rem 0rem;
       display: flex;
       flex-wrap: nowrap;
       color: #fff; }
+      #footer-yousef.container.yousef section.row.dogs-photos div.center article .row {
+        width: 100%; }
+      @media screen and (max-width: 768px) {
+        #footer-yousef.container.yousef section.row.dogs-photos div.center article {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: 100%; } }
       #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row:first-child div {
         opacity: 0.5;
         font-size: 12px;
@@ -541,7 +612,3 @@ a:hover {
   transform: scale(1.2); }
 
 /**************$animation navbar************/
-@media screen and (max-width: 768px) {
-  .form-inline,
-  .nav-bar-left {
-    display: none; } }

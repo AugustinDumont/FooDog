@@ -8,7 +8,12 @@
    animation-name: dropdown;
    animation-duration: 2s;
    opacity: 0.9;
+ }
 
+ .fixed-top {
+   a:hover {
+     text-decoration: none;
+   }
  }
 
  @keyframes dropdown {
@@ -28,6 +33,7 @@
    margin-left: 10px;
    margin-right: -50px;
  }
+
 
  /* 3 petites barres noires crées avec span*/
 
@@ -66,6 +72,10 @@
    justify-content: flex-start;
 
    img {
+     @media screen and (max-width : 768px) {
+       justify-self: center;
+     }
+
      max-width: 180px;
    }
 
@@ -77,51 +87,59 @@
 
  .navbar {
    .form-inline {
-     margin: auto;
-
-     .text-form {
-       p {
-         font-family: "Open Sans", sans-serif;
-         margin: 0.6rem 0.3rem;
-         font-size: 0.8rem;
-         opacity: 0.7;
-       }
+     @media screen and (max-width : 768px) {
+       display: none;
      }
+   }
 
-     input[type="email"] {
-       border: 1px solid black;
-       border-radius: 0;
-       font-size: 0.7rem;
+   margin: auto;
+
+   .text-form {
+     p {
+       font-family: "Open Sans", sans-serif;
+       margin: 0.6rem 0.3rem;
+       font-size: 0.8rem;
+       opacity: 0.7;
      }
+   }
 
-     input[type="submit"] {
-       width: 80px;
-       font-size: 0.7rem;
-       background-color: black;
-       color: white;
-       font-weight: bold;
-       border-style: none;
-       border: 1px solid black;
-       transition: 0.4s ease-in;
+   input[type="email"] {
+     border: 1px solid black;
+     border-radius: 0;
+     font-size: 0.7rem;
+   }
 
-       &:hover {
-         background-color: white;
-         color: black;
-         font-weight: 500;
-       }
+   input[type="submit"] {
+     width: 80px;
+     font-size: 0.7rem;
+     background-color: black;
+     color: white;
+     font-weight: bold;
+     border-style: none;
+     border: 1px solid black;
+     transition: 0.4s ease-in;
+
+     &:hover {
+       background-color: white;
+       color: black;
+       font-weight: 500;
      }
    }
  }
+
 
  /********************************section 1 ****** titre et photo************************/
 
 
  #article {
+   @media screen and (max-width : 768px) {
+     margin-right: auto;
+   }
+
    margin-top: 70px;
    display: flex;
    justify-content: flex-end;
    margin-right: 0rem;
-   margin-right: auto;
  }
 
  .intro-article {
@@ -153,6 +171,10 @@
  }
 
  .nav-bar-article {
+   @media screen and (max-width : 768px) {
+     display: none;
+   }
+
    .nav-bar-article-left {
      display: flex;
      justify-content: flex-start;
@@ -183,7 +205,13 @@
 
 
 
+ #delete-aside {
+   width: 100%;
 
+   @media screen and (max-width : 768px) {
+     display: none;
+   }
+ }
 
  #aside-intro {
    text-align: center;
@@ -200,6 +228,10 @@
  }
 
  .align-followus {
+   @media screen and (max-width : 768px) {
+     display: none;
+   }
+
    width: 80%;
    display: flex;
    align-items: flex-end;
@@ -208,7 +240,7 @@
    opacity: 0.7;
    font-size: 0.9rem;
    font-family: "Open Sans",
-     sans-serif;
+   sans-serif;
  }
 
 
@@ -246,37 +278,42 @@
    text-transform: uppercase;
  }
 
- .under-btn {
-   width: 80%;
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
+ #delete-aside {
+   width: 100%;
 
-   img {
-     width: 50px;
-     height: auto;
-     float: left;
-   }
+   .under-btn {
+     width: 80%;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
 
-   p {
-     width: 120px;
-     font-size: 0.6rem;
-     opacity: 0.4;
-     margin-left: 70px;
-     font-family: "Open Sans", sans-serif;
-   }
 
-   .textBold {
-     font-family: "Open Sans", sans-serif;
-     color: black;
-     font-weight: 900;
-     font-size: 0.8rem;
-     text-shadow: 0 0 0.5px black;
-     opacity: 0.4;
-     text-align: center;
-     text-transform: uppercase;
-     margin-left: 0px;
-     line-height: 1rem;
+     img {
+       width: 50px;
+       height: auto;
+       float: left;
+     }
+
+     p {
+       width: 120px;
+       font-size: 0.6rem;
+       opacity: 0.4;
+       margin-left: 70px;
+       font-family: "Open Sans", sans-serif;
+     }
+
+     .textBold {
+       font-family: "Open Sans", sans-serif;
+       color: black;
+       font-weight: 900;
+       font-size: 0.8rem;
+       text-shadow: 0 0 0.5px black;
+       opacity: 0.4;
+       text-align: center;
+       text-transform: uppercase;
+       margin-left: 0px;
+       line-height: 1rem;
+     }
    }
  }
 
@@ -316,7 +353,8 @@
  }
 
  .main-dog {
-   height: 500px;
+   height: auto;
+   width: 100%;
  }
 
  .aside-dog {
@@ -338,6 +376,7 @@
    button {
      width: 17%;
      min-width: 67px;
+     height: 30px;
 
      p {
        font-size: 0.8rem;
@@ -355,6 +394,10 @@
  /********************************SUBSCRIBE************************/
 
  #subscribe {
+   @media screen and (max-width : 768px) {
+     width: 80%;
+   }
+
    width: 50%;
    margin: 50px auto 0 auto;
 
@@ -401,6 +444,15 @@
        font-weight: bold;
        border-style: none;
        border: 2px solid rgb(252, 141, 105);
+
+       &:hover {
+         background-color: white;
+         color: rgb(252, 141, 105);
+         border: 1px solid rgba(25, 25, 25, 0.4);
+         text-shadow: 0 0 0.5px rgb(252, 141, 105);
+         box-shadow: 0 0 0 0.5px grey;
+
+       }
      }
    }
  }
@@ -408,6 +460,10 @@
  /*********************Previous article*******************/
 
  #previousarticle {
+   @media screen and (max-width : 768px) {
+     width: 80%;
+   }
+
    width: 50%;
    margin: auto;
 
@@ -436,11 +492,19 @@
      text-shadow: 0 0 0.5px black;
      opacity: 0.8;
    }
+
+   a:hover {
+     text-decoration: none;
+   }
  }
 
  /*********************The Farmer's dog*******************/
 
  #thefarmersdog {
+   @media screen and (max-width : 768px) {
+     width: 80%;
+   }
+
    width: 50%;
    margin: 30px auto 0 auto;
 
@@ -452,8 +516,13 @@
    }
 
    p {
+     @media screen and (max-width : 768px) {
+       margin-left: 0px;
+     }
+
      font-size: 0.8em;
-     font-family: "Open Sans", sans-serif;
+     font-family: "Open Sans",
+     sans-serif;
      opacity: 0.5;
      margin-left: 100px;
    }
@@ -472,6 +541,10 @@
 
  /*******Margin-top 500px à effacer ********/
  #youmightalsolike {
+   @media screen and (max-width : 768px) {
+     width: 80%;
+   }
+
    width: 50%;
    margin: 30px auto 0 auto;
 
@@ -492,14 +565,15 @@
    }
 
    img {
-     margin-top: 20px;
      width: 100%;
      padding-right: 0px;
+     margin-top: 20px;
    }
- }
 
- .annu-padding {
-   padding-right: 0;
+   .annu-padding {
+     padding-right: 0;
+     width: 100%;
+   }
 
    p {
      margin-top: 15px;
@@ -507,12 +581,30 @@
      text-align: justify;
      opacity: 0.5;
    }
+
+   .hover-zoom {
+     @media screen and (max-width : 768px) {
+       transform: scale(1);
+       width: 70%;
+       height: auto;
+       margin: auto;
+     }
+   }
  }
+
+
+
+
+
+
 
  /*********************Leave a response*******************/
 
  #leavearesponse {
-   /* margin-bottom 70px à ajuster*/
+   @media screen and (max-width : 768px) {
+     width: 80%;
+   }
+
    width: 50%;
    margin: 30px auto 70px auto;
 
@@ -530,6 +622,7 @@
 
      textarea {
        width: 100%;
+       min-width: 300px;
        height: 150px;
        padding: 8px;
        opacity: 0.9;
@@ -585,12 +678,29 @@
      display: flex;
      justify-content: center;
 
+     @media screen and (max-width : 768px) {
+       display: none;
+     }
+
      div.center {
        padding: 0rem;
        margin: 2rem 0rem;
        display: flex;
        flex-wrap: nowrap;
        color: #fff;
+
+       article {
+         .row {
+           width: 100%;
+         }
+
+         @media screen and (max-width : 768px) {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           width: 100%;
+         }
+       }
 
        article:first-child {
          .row:first-child {
@@ -762,13 +872,5 @@
    transform: scale(1.2);
  }
 
+
  /**************$animation navbar************/
-
- @media screen and (max-width : 768px) {
-
-   .form-inline,
-   .nav-bar-left,
-     {
-     display: none;
-   }
- }
