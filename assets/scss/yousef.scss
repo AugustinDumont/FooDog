@@ -49,13 +49,21 @@ $fiftyRadius: 50%;
     justify-content: $center;
 }
 
+@mixin MediaQflexWrapCenter {
+    @media screen and (max-width: $maxWidthMediaQ + 220px) {
+        display: $displayFlex;
+        flex-wrap: wrap;
+        justify-content: $center;
+    }
+}
+
 @mixin flexCenter {
     display: $displayFlex;
     justify-content: $center;
 }
 
 @mixin setPhoneMenu {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $maxWidthMediaQ) {
         width: $fullWidth;
         display: $displayFlex;
         justify-content: space-evenly;
@@ -248,15 +256,11 @@ section#latest-posts.container {
             display: $displayFlex;
             flex-wrap: nowrap;
             color: $whiteColorText;
-            @media only screen and (max-width: $maxWidthMediaQ) {
-                @include flexCenter;
-            }
+            @include MediaQflexWrapCenter;
             article:first-child {
                 margin: $zeroPM $autoMargin;
                 .row:first-child {
-                    @media only screen and (max-width: $maxWidthMediaQ) {
-                        text-align: $center;
-                    }
+                    @include MediaQflexWrapCenter;
                     div {
                         opacity: 0.5;
                         font-size: $fontSize;
@@ -285,11 +289,9 @@ section#latest-posts.container {
                 }
             }
             article:nth-of-type(2) {
-                @media only screen and (max-width: $maxWidthMediaQ) {
-                    @include flexWrapCenter;
-                }
+                @include MediaQflexWrapCenter;
                 .row:first-child {
-                    @media only screen and (max-width: $maxWidthMediaQ) {
+                    @media only screen and (max-width: ($maxWidthMediaQ + 220px)) {
                         min-width: $fullWidth;
                         text-align: $center;
                     }
@@ -300,7 +302,7 @@ section#latest-posts.container {
                     }
                 }
                 .row {
-                    max-width: $fullWidth;
+                    min-width: $fullWidth;
                     margin-bottom: 0.2rem;
                     div {
                         margin: $zeroPM;
@@ -318,14 +320,9 @@ section#latest-posts.container {
                 }
             }
             article:nth-of-type(3) {
-                @media only screen and (max-width: $maxWidthMediaQ) {
-                    @include flexWrapCenter;
-                }
+                @include MediaQflexWrapCenter;
                 img {
                     max-width: $fullWidth;
-                    @media only screen and (max-width: $maxWidthMediaQ) {
-                        width: $fullWidth;
-                    }
                     &:hover {
                         cursor: pointer;
                         box-shadow: 5px 15px 20px #414549;

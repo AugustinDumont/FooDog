@@ -148,15 +148,18 @@ section#latest-posts.container, section#latest-posts.container .row.father .titl
       display: flex;
       flex-wrap: nowrap;
       color: #fff; }
-      @media only screen and (max-width: 768px) {
+      @media screen and (max-width: 988px) {
         #footer-yousef.container.yousef section.row.dogs-photos div.center {
           display: flex;
+          flex-wrap: wrap;
           justify-content: center; } }
       #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child {
         margin: 0rem auto; }
-        @media only screen and (max-width: 768px) {
+        @media screen and (max-width: 988px) {
           #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row:first-child {
-            text-align: center; } }
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; } }
         #footer-yousef.container.yousef section.row.dogs-photos div.center article:first-child .row:first-child div {
           opacity: 0.5;
           font-size: 12px;
@@ -177,12 +180,12 @@ section#latest-posts.container, section#latest-posts.container .row.father .titl
             font-size: 12px;
             border-bottom: 1px solid #2b4049;
             height: 2rem; }
-      @media only screen and (max-width: 768px) {
+      @media screen and (max-width: 988px) {
         #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(2) {
           display: flex;
           flex-wrap: wrap;
           justify-content: center; } }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 988px) {
         #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(2) .row:first-child {
           min-width: 100%;
           text-align: center; } }
@@ -191,7 +194,7 @@ section#latest-posts.container, section#latest-posts.container .row.father .titl
         font-size: 12px;
         padding: 0rem 0rem 0.2rem 0.5rem; }
       #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(2) .row {
-        max-width: 100%;
+        min-width: 100%;
         margin-bottom: 0.2rem; }
         #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(2) .row div {
           margin: 0rem;
@@ -203,16 +206,13 @@ section#latest-posts.container, section#latest-posts.container .row.father .titl
             font-size: 11px;
             width: 100%;
             text-align: center; }
-      @media only screen and (max-width: 768px) {
+      @media screen and (max-width: 988px) {
         #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(3) {
           display: flex;
           flex-wrap: wrap;
           justify-content: center; } }
       #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(3) img {
         max-width: 100%; }
-        @media only screen and (max-width: 768px) {
-          #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(3) img {
-            width: 100%; } }
         #footer-yousef.container.yousef section.row.dogs-photos div.center article:nth-of-type(3) img:hover {
           cursor: pointer;
           box-shadow: 5px 15px 20px #414549;
