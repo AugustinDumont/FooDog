@@ -27,8 +27,9 @@ $fiftyRadius: 50%;
 
 /*start mixin*/
 
-@mixin fontFamityGlobal {
+@mixin setHtml {
     font-family: $fontGlobalFamily;
+    scroll-behavior: smooth;
 }
 
 @mixin setLink {
@@ -60,7 +61,7 @@ $fiftyRadius: 50%;
 /*here starts global style*/
 
 html {
-    @include fontFamityGlobal;
+    @include setHtml;
 }
 
 img {
