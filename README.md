@@ -8,7 +8,6 @@ Groupe de 4 personnes.
 # Organisation du travail
 2 pages html + 1 bonus à réaliser. 
 Une équipe de deux par page. 
-Sur chaques pages dans l'équipe de deux, un qui commençait par le bas de la page et l'autre commençait par le haut, pour arriver chacun à la moitié de la page et ainsi ne pas faire de doublon ou de conflit.
 
 Difficultés : 
 
@@ -44,5 +43,9 @@ Points d'amélioration pour futurs projets :
 ## Augustin :
 
 "Beaucoup de choses apprises pour ce premier travail collectif. Amélioration de ma compréhension des problèmes grâce à l'utilisation de l'outil inspecteur. Plaisir à découvrir SASS et ses possibilités de structure. Au niveau humain, très bon duo avec mon partenaire. ##Nourriture partagée, rigolade, complicité##. Au niveau du groupe, la complémentarité des savoirs s'est montrée efficace. La divergence des personnalités, en aucun cas une gageure. Merci à tous !"
+
+## Yousef :
+
+"Best team ever, thank u all for your patience. I have learned a lot of things that i did not know, have tryed to do my best to make the project better thanks to my team and thier propostions"
 
 
